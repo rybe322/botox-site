@@ -207,7 +207,7 @@ body *,
   color: #131112;
 }
 p {
-  font-size: var(--s3);
+  font-size: var(--s2);
 }
 li {
   font-size: var(--s3);
