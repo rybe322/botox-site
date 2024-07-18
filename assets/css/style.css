@@ -162,7 +162,7 @@ h1 {
 p {
   font-size: var(--s1);
   /* min-inline-size: 40ch; */
-  max-inline-size: 40ch;
+  max-inline-size: 50ch;
 }
 nav {
   font-size: var(--s2);
@@ -210,7 +210,7 @@ p {
   font-size: var(--s3);
 }
 li {
-  font-size: var(--s1);
+  font-size: var(--s3);
 }
 body * {
   margin-inline: auto;
