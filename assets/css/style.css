@@ -230,3 +230,6 @@ li {
 section li {
   max-inline-size: 40ch;
 }
+h1 {
+  text-align: center;
+}
