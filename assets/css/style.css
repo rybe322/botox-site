@@ -108,7 +108,7 @@ CLUSTER
   /* ↓ Set the space/gap */
   gap: var(--space, 1rem);
   /* ↓ Choose your justification (flex-start is default) */
-  justify-content: flex-end;
+  justify-content: center;
   /* ↓ Choose your alignment (flex-start is default) */
   align-items: center;
 }
@@ -177,7 +177,7 @@ a {
   text-decoration: none;
 }
 nav ul :first-child {
-  margin-inline-end: auto;
+  /* margin-inline-end: auto; */
 }
 /*
 FRAME
