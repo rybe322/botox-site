@@ -64,7 +64,7 @@ STACK
 }
 .stack > * + * {
   /* ↓ Top margin is only applied to successive elements */
-  margin-block-start: var(--space, 1.5rem);
+  margin-block-start: var(--s3, 1.5rem);
 }
 /*
 BOX
@@ -125,7 +125,7 @@ HEADER
   /* ↓ The default value is the first point on the modular scale */
   /* gap: var(--gutter, var(--s1)); */
   /* ↓ The width at which the layout “breaks” */
-  --threshold: 60rem;
+  --threshold: 80rem;
 }
 .switcher > * {
   /* ↓ Allow children to grow */
@@ -157,11 +157,12 @@ body * {
 }
 h1 {
   font-size: var(--s5);
-  text-align: center;
+  /* text-align: center; */
 }
 p {
-  font-size: var(--s2);
-  min-inline-size: 20ch;
+  font-size: var(--s1);
+  min-inline-size: 40ch;
+  max-inline-size: 60ch;
 }
 nav {
   font-size: var(--s2);
@@ -196,4 +197,21 @@ FRAME
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
+}
+body,
+body *,
+.box {
+  background-color: rgb(252, 228, 216);
+}
+.box {
+  color: #131112;
+}
+p {
+  font-size: var(--s2);
+}
+li {
+  font-size: var(--s1);
+}
+body * {
+  margin-inline: auto;
 }
