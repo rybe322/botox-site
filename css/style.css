@@ -20,12 +20,14 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
-/* 
+/*
+
+*/
 .container {
-  min-inline-size: 500px;
-  margin-inline: auto;
+  min-inline-size: var(--measure);
+  /* margin-inline: auto; */
 }
- */
+
 html {
   font-size: 62.5%;
 }
@@ -52,7 +54,7 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-size: var(--s2);
+  font-size: var(--s3);
 }
 p {
   font-size: var(--s2);
@@ -202,4 +204,18 @@ a {
   /* ↓ Center the centered element (h1 here)
   in the available vertical space */
   margin-block: auto;
+}
+
+section {
+  position: relative;
+}
+img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  left: 0;
+  top: 0;
+}
+
+section .frame + p {
 }
