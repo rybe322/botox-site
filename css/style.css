@@ -46,6 +46,10 @@ html {
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
+  --s8: calc(var(--s7) * var(--ratio));
+
   --space: var(--s1);
   --olive: #808000;
   --green: #008040;
@@ -60,10 +64,12 @@ h1 {
 }
 h2 {
   font-size: var(--s3);
+  text-align: center;
 }
+
 p {
   font-size: var(--s2);
-  max-inline-size: var(--measure);
+  /* max-inline-size: var(--measure); */
 }
 a {
   font-size: var(--s3);
@@ -120,7 +126,7 @@ a {
   /* ↓ Enable wrapping */
   flex-wrap: wrap;
   /* ↓ Set the space/gap */
-  gap: (var(--s-5), 1rem);
+  gap: (var(--s-1), 1rem);
   /* ↓ Choose your justification (flex-start is default) */
   justify-content: center;
   /* ↓ Choose your alignment (flex-start is default) */
@@ -215,7 +221,7 @@ section {
   /* position: relative; */
 }
 img {
-  position: absolute;
+  position: fixed;
   /* left: 30%; */
   /* bottom: -50%; */
 }
@@ -249,4 +255,9 @@ section .frame + p {
 }
 nav li a {
   font-size: var(--s4);
+}
+
+/* HEADER STYLES */
+header .box {
+  margin-block: var(--s2);
 }
