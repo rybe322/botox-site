@@ -223,7 +223,7 @@ section {
 img {
   position: fixed;
   /* left: 30%; */
-  /* bottom: -50%; */
+  bottom: 10%;
 }
 
 section .frame + p {
