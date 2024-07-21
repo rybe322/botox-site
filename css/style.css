@@ -211,10 +211,8 @@ section {
 }
 img {
   position: absolute;
-  /* bottom: 40%; */
-  /* right: 10%; */
-  /* left: 0; */
-  /* top: 0; */
+  left: 30%;
+  bottom: -50%;
 }
 
 section .frame + p {
@@ -226,4 +224,10 @@ section .frame + p {
   text-align: center;
   /* line-height: 20vh; */
   font-size: var(--s4);
+}
+
+.button-alt {
+  padding: var(--s1);
+  margin: var(--s3);
+  text-transform: uppercase;
 }
