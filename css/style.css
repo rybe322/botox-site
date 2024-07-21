@@ -34,7 +34,7 @@ html {
 }
 
 :root {
-  --ratio: 1.5;
+  --ratio: 1.61803398875;
   --s-5: calc(var(--s-4) / var(--ratio));
   --s-4: calc(var(--s-3) / var(--ratio));
   --s-3: calc(var(--s-2) / var(--ratio));
@@ -47,6 +47,10 @@ html {
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
   --space: var(--s1);
+  --olive: #808000;
+  --green: #008040;
+  --blueish: #000080;
+  --reddish: #800040;
   --measure: 70ch;
 }
 
@@ -62,7 +66,7 @@ p {
   max-inline-size: var(--measure);
 }
 a {
-  font-size: var(--s2);
+  font-size: var(--s3) !important;
   text-decoration: none;
 }
 
@@ -115,9 +119,9 @@ a {
   /* ↓ Enable wrapping */
   flex-wrap: wrap;
   /* ↓ Set the space/gap */
-  gap: var(--space, 1rem);
+  gap: (var(--s-5), 1rem);
   /* ↓ Choose your justification (flex-start is default) */
-  justify-content: space-around;
+  justify-content: center;
   /* ↓ Choose your alignment (flex-start is default) */
   align-items: center;
 }
@@ -207,12 +211,12 @@ a {
 }
 
 section {
-  position: relative;
+  /* position: relative; */
 }
 img {
   position: absolute;
-  left: 30%;
-  bottom: -50%;
+  /* left: 30%; */
+  /* bottom: -50%; */
 }
 
 section .frame + p {
@@ -223,11 +227,37 @@ section .frame + p {
   color: #fff;
   text-align: center;
   /* line-height: 20vh; */
-  font-size: var(--s4);
+  font-size: var(--s3);
 }
 
 .button-alt {
   padding: var(--s1);
-  margin: var(--s3);
+  /* margin: var(--s3); */
   text-transform: uppercase;
+}
+
+body * {
+  background-color: var(--reddish) !important;
+  color: #fff !important;
+}
+
+label {
+  text-align: center;
+  font-size: var(--s2);
+}
+
+input {
+  height: 5vh;
+  background-color: white !important;
+  width: 50vw;
+  color: var(--olive) !important;
+  font-size: var(--s3) !important;
+  margin-inline: auto;
+  text-align: center;
+}
+#schedule-now {
+  font-size: var(--s5);
+  font-weight: 900;
+}
+#schedule-now input {
 }
