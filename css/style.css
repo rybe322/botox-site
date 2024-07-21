@@ -24,12 +24,13 @@
 
 */
 .container {
-  min-inline-size: var(--measure);
+  /* min-inline-size: var(--measure); */
   /* margin-inline: auto; */
 }
 
 html {
   font-size: 62.5%;
+  line-height: 1.5;
 }
 
 :root {
@@ -210,11 +211,19 @@ section {
 }
 img {
   position: absolute;
-  bottom: 10%;
-  right: 10%;
-  left: 0;
-  top: 0;
+  /* bottom: 40%; */
+  /* right: 10%; */
+  /* left: 0; */
+  /* top: 0; */
 }
 
 section .frame + p {
+}
+
+.button {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  /* line-height: 20vh; */
+  font-size: var(--s4);
 }
