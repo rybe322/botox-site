@@ -116,11 +116,10 @@ a {
   /* ↓ Set the space/gap */
   gap: var(--space, 1rem);
   /* ↓ Choose your justification (flex-start is default) */
-  justify-content: center;
+  justify-content: space-around;
   /* ↓ Choose your alignment (flex-start is default) */
   align-items: center;
 }
-
 /* CENTER STYLE */
 .center {
   /* ↓ Remove padding from the width calculation */
