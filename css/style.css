@@ -51,11 +51,11 @@ html {
   --green: #008040;
   --blueish: #000080;
   --reddish: #800040;
-  --measure: 70ch;
+  --measure: 20ch;
 }
 
 h1 {
-  font-size: var(--s5);
+  font-size: var(--s4);
   text-align: center;
 }
 h2 {
@@ -66,7 +66,7 @@ p {
   max-inline-size: var(--measure);
 }
 a {
-  font-size: var(--s3) !important;
+  font-size: var(--s3);
   text-decoration: none;
 }
 
@@ -75,16 +75,17 @@ a {
   /* ↓ Padding set to the first point on the modular scale */
   padding: var(--s1);
   /* ↓ Assumes you have a --border-thin var */
-  border: var(--border-thin) solid;
+  /* border: var(--border-thin) solid; */
   /* ↓ Always apply the transparent outline, for high contrast mode */
-  outline: var(--border-thin) transparent;
-  outline-offset: calc(var(--border-thin) * -1);
+  /* outline: var(--border-thin) transparent; */
+  /* outline-offset: calc(var(--border-thin) * -1); */
   /* ↓ The light and dark color vars */
-  --color-light: #fff;
+  --color-light: var(--reddish);
   --color-dark: #000;
-  color: var(--color-dark);
+  color: #fff;
   background-color: var(--color-light);
 }
+
 .box * {
   /* ↓ Force colors to inherit from the parent
   and honor inversion (below) */
@@ -223,7 +224,7 @@ section .frame + p {
 }
 
 .button {
-  background-color: black;
+  /* background-color: black; */
   color: #fff;
   text-align: center;
   /* line-height: 20vh; */
@@ -235,29 +236,17 @@ section .frame + p {
   /* margin: var(--s3); */
   text-transform: uppercase;
 }
-
-body * {
-  background-color: var(--reddish) !important;
-  color: #fff !important;
+.background {
+  background-color: var(--reddish);
 }
 
-label {
-  text-align: center;
+.box input {
   font-size: var(--s2);
-}
-
-input {
-  height: 5vh;
-  background-color: white !important;
-  width: 50vw;
-  color: var(--olive) !important;
-  font-size: var(--s3) !important;
-  margin-inline: auto;
+  color: black;
   text-align: center;
+  margin-inline: auto;
+  inline-size: var(--measure);
 }
-#schedule-now {
-  font-size: var(--s5);
-  font-weight: 900;
-}
-#schedule-now input {
+nav li a {
+  font-size: var(--s4);
 }
